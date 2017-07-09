@@ -11,6 +11,10 @@ final class TestRoutes: RouteCollection {
         builder.get("plaintext") { req in
             return "Hello, world!"
         }
+        
+        builder.get("wang") { req in
+            return "Wang is in the sky with diamonds!"
+        }
 
         // response to requests to /info domain
         // with a description of the request
